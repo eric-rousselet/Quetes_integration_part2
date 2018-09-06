@@ -1,0 +1,26 @@
+.conteneur:hover img
+{
+	opacity:1;
+}
+
+.conteneur:hover p
+{
+	visibility:hidden;
+}
+
+.conteneur
+{
+	position: relative;
+}
+
+.conteneur img
+{
+	opacity:0.3;
+}
+
+.text
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
