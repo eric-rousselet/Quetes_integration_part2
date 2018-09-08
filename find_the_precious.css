@@ -1,3 +1,53 @@
+@font-face
+{
+	font-family: "partybusiness";
+	src: url("fonts/nancy-lorenz_party-business/partybusiness.ttf");
+}
+
+@font-face
+{
+	font-family: "tngan";
+	src: url("fonts/tengwar_annatar/tngan.ttf");
+}
+
+@font-face
+{
+	font-family: "anirm";
+	src: url("fonts/pete-klassen_aniron/anirm___.ttf");
+}
+
+.tngan
+{
+	font-family: "tngan";
+}
+
+h2
+{
+	font-family: "anirm";
+}
+
+.menu
+{
+	color:white;
+	background-color:#fe661d;
+	font-family: "anirm";
+}
+
+.burger
+{
+	border:1px solid white;
+}
+
+.menu a
+{
+	color:white;
+}
+
+.carousel
+{
+	font-family: "partybusiness";
+}
+
 .conteneur:hover img
 {
 	opacity:1;
