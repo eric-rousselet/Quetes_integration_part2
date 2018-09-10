@@ -7,7 +7,7 @@
 @font-face
 {
 	font-family: "tngan";
-	src: url("fonts/tengwar_annatar/tngan.ttf");
+	src: url("fonts/tengwar_annatar/tngani.ttf");
 }
 
 @font-face
@@ -19,11 +19,18 @@
 .tngan
 {
 	font-family: "tngan";
+	color:#fe661d;
+}
+
+h2, form
+{
+	font-family: "anirm";
+	padding:20px;
 }
 
 h2
 {
-	font-family: "anirm";
+	font-size:20px;
 }
 
 .menu
@@ -33,24 +40,41 @@ h2
 	font-family: "anirm";
 }
 
+#navbarSupportedContent
+{
+	margin-left:185px;
+}	
+
 .burger
 {
 	border:1px solid white;
 }
 
-.menu a
+.menu a, .footer a
 {
 	color:white;
 }
 
-.carousel
+.navbar-nav .active
 {
+	text-decoration:underline;
+}
+
+.carousel h3
+{
+	font-size:60px;
+	font-family: "partybusiness";
+}
+
+.carousel h4
+{
+	font-size:40px;
 	font-family: "partybusiness";
 }
 
 .conteneur:hover img
 {
-	opacity:1;
+	opacity:0.8;
 }
 
 .conteneur:hover p
@@ -58,14 +82,106 @@ h2
 	visibility:hidden;
 }
 
+.conteneur p
+{
+	background-color: rgba(255,255,255,0.7);
+}
+
+.conteneur:hover h5
+{
+	position:absolute;
+	width:100%;
+	top:200px;
+	text-align:center;
+}
+
+.conteneur:hover .gimli
+{
+	top:147px;
+}
+
 .conteneur
 {
 	position: relative;
+	font-family: "partybusiness";
+}
+
+.most_dangerous
+{
+	text-decoration:underline;
+	color:#fe661d;
+}
+
+#dead
+{
+	color:#fe661d;
+	background-color: rgba(255,255,255,0);
+}
+
+.conteneur h5
+{
+	color:white;
+	font-size:1.8em;
+}
+
+.gimli
+{
+	margin-top:53px;
+}
+
+h5 del
+{
+	color:#fe661d;
+}
+
+h5 del span
+{
+	color:white;
+}
+
+.coins
+{
+	color:#fe661d;
+}
+
+.conteneur .text
+{
+	text-align:center;
+	position:absolute;
+	width:235px;
+	top:20px;
+	left:20px;
+	font-size:1.6em;
 }
 
 .conteneur img
 {
-	opacity:0.3;
+	opacity:1;
+}
+
+#or_alive
+{
+	font-size:0.8em;
+}
+
+.fellows .card
+{
+	margin:25px;
+	border: 5px solid #131313;
+}
+
+.fellows .card-body
+{
+	background-color:#131313;
+	color:#b7b7b7;
+	font-size:1.5em;
+}
+
+.reward
+{
+	padding:15px;
+	font-family: "partybusiness";
+	font-size: 1.2rem;
 }
 
 .text
@@ -73,4 +189,207 @@ h2
 	position: absolute;
 	top: 0px;
 	left: 0px;
+}
+
+.fellows, .hunter, .join
+{
+	background-image:url(Images/bg_light.png);
+}
+
+.reward, .ring, .contact
+{
+	background-image:url(Images/bg_dark.png);
+	color:white;
+}
+
+.profile
+{
+	text-decoration:underline;
+}
+
+.hunter h5
+{
+	color:#fe661d;
+	font-size:1.6em;
+}
+
+.hunter
+{
+	font-family: "partybusiness";
+	font-size:1.4em;
+	padding:15px;
+}
+
+.hunter .more_infos
+{
+	justify-content:flex-start;
+	margin:0px;
+	font-family: "partybusiness";
+	font-size:1em;
+}
+
+.hunter .more_infos:hover
+{
+	background-color:#231f1e;
+	color:#fe661d;
+	font-family: "partybusiness";
+	box-shadow:5px 5px 0 rgba(0,0,0,.5);
+	transform:skew(-20deg);
+	border-radius:0px;
+	text-align:center;
+	justify-content:flex-start;
+	border-width:0px;
+	display:flex;
+	margin:0px;
+}
+
+.ring
+{
+	padding:15px;
+}
+
+.ring p
+{
+	font-size:1.4em;
+}
+
+.ring table td
+{
+	border-top: solid 1px #4d4d4d;
+	color:#4d4d4d;
+}
+
+.ring table thead tr th
+{
+	border-bottom: solid 3px #4d4946;
+}
+
+#gollum
+{
+	color:#676661;
+	text-align:right;
+	display:block;
+	margin-right:30px;
+}
+
+.footer, .card-header
+{
+	background-color:#fe661d;
+	color:white;
+	font-family: "anirm";
+}
+
+.footer
+{
+	margin:0px;
+}
+
+.ring .card
+{
+	margin:20px;
+	border:none;
+	border-bottom: 5px solid #fe661d;
+}
+
+.card-body
+{
+	color:black;
+	font-family: "partybusiness";
+	background-color:#e2dedb;
+}
+
+.table
+{
+	font-family: "anirm";
+}
+
+.contact_us, .contact_us:hover
+{
+	background-color:white;
+	color:#fe661d;
+	font-family: "anirm";
+	box-shadow:5px 5px 0 rgba(0,0,0,.5);
+	transform:skew(-20deg);
+	border-radius:0px;
+	text-align:center;
+	justify-content: center;
+	border-width:0px;
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.more_infos, .more_infos:hover
+{
+	background-color:#231f1e;
+	color:#fe661d;
+	font-family: "anirm";
+	box-shadow:5px 5px 0 rgba(0,0,0,.5);
+	transform:skew(-20deg);
+	border-radius:0px;
+	text-align:center;
+	justify-content: center;
+	border-width:0px;
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.join p
+{
+	font-family: "partybusiness";
+	font-size:1.3em;
+}
+
+.join
+{
+	padding:15px;
+	margin-top:-20px;
+}
+
+.join .col
+{
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+}
+
+#more_infos
+{
+	color:#fe661d;
+	font-family: "anirm";
+	display:flex;
+	justify-content:center;
+}
+
+.more_infos_all
+{
+	margin-top: 40px;
+}
+
+.nav-pills
+{
+	justify-content: center;
+}
+
+.nav-pills a
+{
+	font-family: "anirm";
+	color:#676661;
+}
+
+.active
+{
+	color:##fe661d;
+	background-color:none;
+}
+
+.form-group input, .form-group select, .form-group textarea
+{
+	font-size:14px;
+}
+
+.container
+{
+	padding:0px;
 }

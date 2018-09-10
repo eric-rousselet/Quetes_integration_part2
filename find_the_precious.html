@@ -12,7 +12,7 @@
   <body>
     <div class="container">
     <nav class="navbar navbar-expand-lg menu">
-      <a class="navbar-brand" href="#">FindThePrecious</a>
+      <img src="Images/logo.png" alt="logo">
       <button class="burger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,22 +20,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Fellows<span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="#">Fellows<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">The Ring</a>
+            <a class="nav-link" href="#">&#10072; The Ring</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reward</a>
+            <a class="nav-link" href="#">&#10072; Reward</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Hunters</a>
+            <a class="nav-link" href="#">&#10072; Hunters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Join</a>
+            <a class="nav-link" href="#">&#10072; Join</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">&#10072; Contact</a>
           </li>
         </ul>
       </div>
@@ -45,8 +45,10 @@
           <div class="carousel-item active">
             <img class="d-block w-100" src="Images/dark_vador.jpg" alt="Darth Vader">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Sauron is a very good bro,</h3>
-              <h4>Please help him to find his ring ! <span>-D.V.</span></h4>
+              <div class="message_carousel">
+                    <h3>Sauron is a very good bro,</h3>
+                    <h4>Please help him to find his ring!   -d.v.</h4>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -73,184 +75,223 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <h2><span class="tngan">Ij </span>Fellows wanted dead (or alive if you want to eat them later)</h2>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Most wanted</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="tngan">b </span>Most dangerous<span class="tngan"> b</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Already captured</a>
-        </li>
-      </ul>
-      <div class="row justify-content-center">
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <div class="conteneur">
-              <img class="card-img-top portrait" src="Images/gandalf.png" alt="Wanted1">
-              <div class="text">
-                <p>
-                  reward 1000 golden coins
-                </p>
+      <div class="fellows">
+        <h2><span class="tngan">ij </span>Fellows wanted dead <span id="or_alive">(or alive if you want to eat them later)</span><span class="tngan"> ij</span></h2>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Most wanted</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="tngan">b </span><span class="most_dangerous">Most dangerous</span><span class="tngan"> b</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Already captured</a>
+          </li>
+        </ul>
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="conteneur">
+                <img class="card-img-top portrait" src="Images/gandalf.png" alt="Wanted1">
+                <div class="text">
+                  <p>
+                    reward <span class="coins">1000</span> golden coins
+                  </p>
+                  <h5>Gandalf</h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A very dangerous wizard, balrog killer ...</p>
               </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Gandalf</h5>
-              <p class="card-text">A very dangerous wizard, balrog killer ...</p>
-            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <div class="conteneur">
-              <img class="card-img-top portrait" src="Images/aragorn.png" alt="Wanted1">
-              <div class="text">
-                <p>
-                  DEAD
-                </p>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="conteneur">
+                <img class="card-img-top portrait" src="Images/aragorn.png" alt="Wanted1">
+                <div class="text">
+                  <p>
+                    reward <span class="coins">800</span> golden coins
+                  </p>
+                  <h5>Aragorn</h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Sauron's finger says him his sword is dangerous...</p>
               </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Aragorn</h5>
-              <p class="card-text">Sauron's finger says him his sword is dangerous...</p>
-            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <div class="conteneur">
-              <img class="card-img-top portrait" src="Images/gimli.png" alt="Wanted1">
-              <div class="text">
-                <p>
-                  Dead
-                </p>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="conteneur">
+                <img class="card-img-top portrait" src="Images/gimli.png" alt="Wanted1">
+                <div class="text">
+                  <p id="dead">
+                    Dead
+                  </p>
+                  <h5 class="gimli"><del><span>Gimli</span></del></h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A dwarf, with a beard and an axe ...</p>
               </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Gimli</h5>
-              <p class="card-text">A dwarf, with a beard and an axe ...</p>
+          </div>
+        </div>
+      </div>
+      <div class="reward">
+        <div class="media">
+          <div class="media-body">
+            <div class="row">
+              <h2 class="mt-0"><span class="tngan">ij </span>I have captured one of them, how to get my reward<span class="tngan"> ij</span></h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-9">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="col-lg-3">
+                <img class="mr-3" src="Images/coin_sauron.png" alt="Reward">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-primary center-block contact_us">Contact us</button>
+          </div>
+        </div>
+      </div>
+      <div class="hunter">
+        <h2><span class="tngan">ij </span>Our best hunters<span class="tngan"> ij</span></h2>
+        <div class="row justify-content-center">
+          <div class="col">  
+            <div class="media">
+              <img class="mr-3" src="Images/hunter1.png" alt="Hunter1">
+              <div class="media-body">
+                <h5 class="mt-0">ElvesKiller22</h5>
+                <p>2 captures - <span class="profile">Profile</span></p>
+                <button type="button" class="btn btn-primary  more_infos">
+                  <img src="Images/thering.png" alt="the ring">12 hate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="media">
+              <img class="mr-3" src="Images/hunter2.png" alt="Hunter1">
+              <div class="media-body">
+                <h5 class="mt-0">Goblin45</h5>
+                <p>1 captures - <span class="profile">Profile</span></p>
+                <button type="button" class="btn btn-primary more_infos">
+                  <img src="Images/thering.png" alt="the ring">18 hate
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <hr>
-      <div class="media">
-        <div class="media-body">
-          <h2 class="mt-0">I have captured one of them, how to get my reward</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <button type="button" class="btn btn-primary">Contact us</button>
+      <div class="ring">
+        <h2><span class="tngan">ij </span>About the ring<span class="tngan"> ij</span></h2>
+        <div class="card">
+          <div class="card-header">
+            Ring capabilities
+          </div>
+          <div class="card-body">
+            <p class="card-text">What can our master Sauron do with the ring?</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Main</td>
+                  <td>Rule them all !</td>
+                </tr>
+                <tr>
+                  <td>Invisibility</td>
+                  <td>You can't see me</td>
+                </tr>
+                <tr>
+                  <td>Power</td>
+                  <td>Destroy the world</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <img class="mr-3" src="Images/coin_sauron.png" alt="Reward">
-      </div>
-      <hr>
-      <h2>Our best hunters</h2>
-      <div class="row justify-content-center">
-        <div class="col">  
-          <div class="media">
-            <img class="mr-3" src="Images/hunter1.png" alt="Hunter1">
-            <div class="media-body">
-              <h5 class="mt-0">ElvesKiller22</h5>
-              <p>2 captures - Profile</p>
-              <button type="button" class="btn btn-primary">
-                Like <span class="badge badge-light">12 hate</span>
-              </button>
+        <div class="card">
+          <div class="card-header">
+            Why the ring is awesome?
+          </div>
+          <div class="card-body">
+            <div class="media">
+              <div class="media-body">
+                <p>My preciooooooousssssss ! Hrk Hrk, we want our preeciooooouuuussssss !!<br><span id="gollum">- Gollum</span></p>
+              </div>
+              <img class="mr-3" src="Images/gollum.png" alt="Reward">
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="media">
-            <img class="mr-3" src="Images/hunter2.png" alt="Hunter1">
-            <div class="media-body">
-              <h5 class="mt-0">Goblin45</h5>
-              <p>1 captures - Profile</p>
-              <button type="button" class="btn btn-primary">
-                Like <span class="badge badge-light">18 hate</span>
-              </button>
-            </div>
+      </div>
+      <div class="join">
+        <h2><span class="tngan">ij </span>Join Mordor Army, we need you !<span class="tngan"> ij</span></h2>
+        <div class="row">
+          <div class="col-xl-7 col-lg-6">
+            <p>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+          </div>
+          <div class="col">
+            <img class="mr-3" src="Images/army.png" alt="Generic placeholder image">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img class="mr-3" src="Images/weneedyou-1.png" alt="Generic placeholder image">
+          </div>
+          <div class="col more_infos_all">
+            <span id="more_infos">
+              More info on
+            </span>
+            <button type="button" class="btn btn-primary more_infos">SauronRulesThemAll.com</button>
           </div>
         </div>
       </div>
-      <hr>
-      <h2>About the ring</h2>
-      <div class="card">
-        <div class="card-header">
-          Ring capabilities
-        </div>
-        <div class="card-body">
-          <p class="card-text">What can our master Sauron do with the ring?</p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Feature</th>
-                <th scope="col">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Main</td>
-                <td>Rule them all !</td>
-              </tr>
-              <tr>
-                <td>Invisibility</td>
-                <td>You can't see me</td>
-              </tr>
-              <tr>
-                <td>Power</td>
-                <td>Destroy the world</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          Why the ring is awesome?
-        </div>
-        <div class="card-body">
-          <div class="media">
-            <div class="media-body">
-              <p>My preciooooooousssssss ! Hrk Hrk, we want our preeciooooouuuussssss !!<br><span>Gollum</span></p>
-            </div>
-            <img class="mr-3" src="Images/gollum.png" alt="Reward">
+      <div class="contact">
+        <h2><span class="tngan">ij </span>Contact us<span class="tngan">  ij</span></h2>
+        <div class="row">
+          <div class="col">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPhone"></label>
+                <input type="email" class="form-control" id="exampleInputPhone" placeholder="Address">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1"></label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>I have seen one of them</option>
+                  <option>I want to join your army</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Your message to the master"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="col">
+            <img src="Images/map.png" alt="map">
           </div>
         </div>
       </div>
-      <hr>
-      <h2>Join Mordor Army, we need you !</h2>
-      <div class="media">
-        <img class="mr-3" src="Images/weneedyou-1.png" alt="Generic placeholder image">
-        <img class="mr-3" src="Images/army.png" alt="Generic placeholder image">
-        <div class="media-body">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          <button type="button" class="btn btn-primary">More info on SauronRulesThemAll.com</button>
-        </div>
-      </div>
-      <hr>
-      <h2>Contact us</h2>
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1"></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPhone"></label>
-          <input type="email" class="form-control" id="exampleInputPhone" placeholder="Address">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1"></label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>I have seen one of them</option>
-            <option>I want to join your army</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Your message to the master"></textarea>
-        </div>
-      </form>
-      <div class="row">
+      <div class="row footer">
         <div class="col">
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -284,6 +325,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Follow him also on twitter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="Images/logo.png" alt="logo"></a>
             </li>
           </ul>
         </div>
