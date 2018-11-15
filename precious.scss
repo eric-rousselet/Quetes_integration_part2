@@ -1,0 +1,23 @@
+ @mixin ring ($size, $color) {
+ 	width:$size;
+ 	height:$size;
+ 	border-radius:50%;
+ 	border:3+$size/20 solid $color;
+ 	box-shadow: 7px 7px 7px darken( $color, 15% ), inset 7px 7px 7px darken( $color, 15% );
+} 
+
+.titleRing {
+    @include ring(75px, #f26215);
+}
+
+.theRing {
+    @include ring(200px, #fff314);
+}
+
+@for $i from 1 through 6 {
+  .rings:nth-child(#{$i}) {
+    @include ring($i*25px, #727270);
+    margin-right:-$i*7px;
+    margin-top:(6-$i)*12px;
+  }
+}
